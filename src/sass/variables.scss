@@ -1,0 +1,83 @@
+/*
+ * Fonts
+ *
+ */
+
+$font-main: "Open Sans", sans-serif;
+$font-second: "Josefin Sans", sans-serif;
+
+/*
+ * Color
+ *
+ */
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-primary: #090a1a;
+$color-secondary: #6b84ff;
+$color-gray: #b0b0b2;
+$color-graylight: #e9ecef;
+$color-blue: #242b58;
+$color-darkblue: #12152f;
+$color-blueblack: #1b2044;
+
+$color-h1: $color-white;
+$color-h2: $color-blue;
+$color-h3: $color-secondary;
+$color-lead: $color-black;
+
+$color-text: $color-gray;
+$color-text-secondary: $color-secondary;
+$color-text-white: $color-white;
+
+$color-link: $color-white;
+$color-link-secondary: $color-secondary;
+
+$color-btn: $color-white;
+$color-btn-border: $color-secondary;
+$color-btn-bg: $color-secondary;
+
+$color-tab-border: $color-blue;
+$color-tab-bg: $color-blue;
+
+$color-progress-bar-bg: $color-blueblack;
+$color-progress-bar-bg-band: $color-secondary;
+
+$color-icon: $color-primary;
+$color-icon-2: $color-secondary;
+$color-icon-hover: $color-white;
+
+$color-bg: $color-secondary;
+$color-bg-2: $color-secondary;
+$color-bg-3: $color-darkblue;
+$color-bg-4: $color-white;
+$color-bg-5: $color-blue;
+
+$color-border: $color-gray;
+$color-border-2: $color-secondary;
+$color-border-3: $color-blue;
+
+/*$color-bg-3
+ * Grid
+ *
+ */
+$breakpoints: (
+	sm: 480px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+);
+
+/*
+ * Animation Speed
+ *
+ */
+
+$animation-speed: 0.4s;

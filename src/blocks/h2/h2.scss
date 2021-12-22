@@ -1,0 +1,77 @@
+.h2 {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-block;
+	padding-right: 15px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 36px;
+	line-height: 45px;
+	color: $color-h2;
+	text-transform: uppercase;
+
+	@media (min-width: 768px) {
+		/* 3 Typography */
+		font-size: 42px;
+		line-height: 51px;
+	}
+}
+.h2::before {
+	/* 1 Positioning */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+
+	/* 2 Block model */
+	width: 130px;
+	height: 80px;
+
+	/* 4 Visual */
+	content: "";
+	background-color: $color-bg-3;
+}
+/* -------------------------------------------- */
+
+/*
+ * Modifiers
+ *
+ */
+.h2--left {
+	/* 2 Block model */
+	padding-right: 0;
+	padding-left: 15px;
+}
+.h2--left::before {
+	/* 1 Positioning */
+	right: auto;
+	left: 0;
+}
+.h2--white {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 3 Typography */
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 36px;
+	color: $color-text-white;
+}
+.h2--white::before {
+	/* 2 Block model */
+	display: none;
+}
+.h2--white span {
+	/* 2 Block model */
+	display: block;
+	margin-bottom: 10px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: initial;
+}

@@ -1,0 +1,45 @@
+@import "fonts";
+@import "variables";
+@import "grid/bootstrap-grid";
+@import "mixins";
+@import "base";
+
+// Atom-mixins
+@import "../blocks/btn/btn.scss";
+@import "../blocks/bad-desc/bad-desc.scss";
+@import "../blocks/icon/icon.scss";
+@import "../blocks/bad-link/bad-link";
+@import "../blocks/menu-css/menu.scss";
+@import "../blocks/intro/intro.scss";
+@import "../blocks/progress-bar/progress-bar.scss";
+@import "../blocks/skills/skills.scss";
+@import "../blocks/experience/experience.scss";
+@import "../blocks/services/item-services/item-services.scss";
+@import "../blocks/services/item-services/item-services.scss";
+@import "../blocks/works/item-works/item-works.scss";
+
+// Atom-blocks
+@import "../blocks/to-top/to-top.scss";
+@import "../blocks/h1/h1.scss";
+@import "../blocks/h2/h2.scss";
+@import "../blocks/h3/h3.scss";
+@import "../blocks/lead/lead.scss";
+@import "../blocks/text/text.scss";
+@import "../blocks/img/img.scss";
+@import "../blocks/spoler/spoler.scss";
+@import "../blocks/tabs/tabs.scss";
+@import "../blocks/fullscreen/fullscreen.scss";
+@import "../blocks/hamburger/hamburger.scss";
+@import "../blocks/sliders/slider.scss";
+
+// Page-text-blocks
+
+// Main Blocks
+@import "../blocks/header/header.scss";
+@import "../blocks/presentation/presentation.scss";
+@import "../blocks/about/about.scss";
+@import "../blocks/services/services.scss";
+@import "../blocks/works/works.scss";
+@import "../blocks/brends/brends.scss";
+@import "../blocks/contact/contact.scss";
+@import "../blocks/footer/footer.scss";

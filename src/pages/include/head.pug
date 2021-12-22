@@ -1,0 +1,24 @@
+mixin head(title='Start template')
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		link(rel="icon" href="images/favicon.ico")
+
+
+		title #{title}
+
+		link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs2015.min.css")
+		link(href="css/jquery.modal.min.css" rel="stylesheet")
+		link(href="css/slick.css" rel="stylesheet")
+		link(href="css/prism.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+
+
+		script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js")
+
+		<!--[if lt IE 9]>
+		script(src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js")
+		script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+		<![endif]-->

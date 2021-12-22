@@ -1,0 +1,68 @@
+.hamburger {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 5;
+
+	/* 2 Block model */
+	width: 50px;
+	height: 50px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	border: 1px solid $color-secondary;
+}
+.hamburger__band,
+.hamburger::before,
+.hamburger::after {
+	/* 1 Positioning */
+	position: absolute;
+	left: 18%;
+
+	/* 2 Block model */
+	width: 30px;
+	height: 3px;
+
+	/* 4 Visual */
+	background-color: $color-secondary;
+
+	/* 5 Animation */
+	transition: all 0.4s ease 0s;
+}
+.hamburger::before,
+.hamburger::after {
+	/* 4 Visual */
+	content: "";
+}
+.hamburger::before {
+	/* 1 Positioning */
+	top: 25%;
+}
+.hamburger::after {
+	/* 1 Positioning */
+	bottom: 25%;
+}
+.hamburger__band {
+	/* 1 Positioning */
+	top: 50%;
+
+	/* 4 Visual */
+	transform: scale(1) translateY(-50%);
+}
+.hamburger--active .hamburger__band {
+	/* 4 Visual */
+	transform: scale(0) translateY(-50%);
+}
+.hamburger--active.hamburger::before {
+	/* 1 Positioning */
+	top: 50%;
+
+	/* 4 Visual */
+	transform: rotate(-45deg) translate(0, -50%);
+}
+.hamburger--active.hamburger::after {
+	/* 1 Positioning */
+	bottom: 50%;
+
+	/* 4 Visual */
+	transform: rotate(45deg) translate(0, 50%);
+}

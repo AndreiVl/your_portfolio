@@ -1,0 +1,59 @@
+.services {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 11;
+
+	/* 2 Block model */
+	padding-top: 240px;
+}
+.services__top {
+	/* 1 Positioning */
+	position: relative;
+}
+.services__title {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 5;
+
+	/* 2 Block model */
+	margin-bottom: 60px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 110px;
+	}
+}
+.services__shape {
+	/* 1 Positioning */
+	position: absolute;
+	top: -160px;
+	right: -100px;
+}
+.services__shape-img {
+	/* 2 Block model */
+	display: block;
+	width: 200px;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: auto;
+	}
+}
+.services__link {
+	/* 3 Typography */
+	text-align: right;
+}
+.services__list {
+	/* 1 Positioning */
+	padding-top: 40px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 65px;
+	}
+}
+.services__list-item {
+	/* 2 Block model */
+	display: flex;
+	margin-bottom: 30px;
+}

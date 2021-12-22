@@ -1,0 +1,72 @@
+.spoler__item {
+	/* 2 Block model */
+	padding-bottom: 7px;
+}
+.spoler__title {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-left: 30px;
+	margin-bottom: 7px;
+
+	/* 3 Typography */
+	text-transform: unset;
+	letter-spacing: 2px;
+
+	/* 4 Visual */
+	cursor: pointer;
+}
+.spoler__title::before,
+.spoler__title::after {
+	/* 1 Positioning */
+	position: absolute;
+	top: 14px;
+
+	/* 2 Block model */
+	width: 10px;
+	height: 1px;
+
+	/* 4 Visual */
+	content: "";
+	background-color: #000;
+
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.spoler__title::before {
+	/* 1 Positioning */
+	left: 0;
+
+	/* 4 Visual */
+	transform: rotate(40deg);
+}
+.spoler__title::after {
+	/* 1 Positioning */
+	left: 7.5px;
+
+	/* 4 Visual */
+	transform: rotate(-40deg);
+}
+.spoler__title.spoler__title-active::before,
+.spoler__title.spoler__title-active::after {
+	/* 4 Visual */
+	background-color: red;
+}
+.spoler__title.spoler__title-active::before {
+	/* 4 Visual */
+	transform: rotate(-40deg);
+}
+.spoler__title.spoler__title-active::after {
+	/* 4 Visual */
+	transform: rotate(40deg);
+}
+.spoler__text {
+	/* 2 Block model */
+	display: none;
+	overflow: hidden;
+}
+.spoler__text-open {
+	/* 2 Block model */
+	display: block;
+}

@@ -1,0 +1,4 @@
+mixin experience(data)
+	div.experience
+		- for (var i = 0; i < data.items.length; i++)
+			p.text.experience__text!=data.items[i]['text']

@@ -1,0 +1,11 @@
+.footer {
+	/* 2 Block model */
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}

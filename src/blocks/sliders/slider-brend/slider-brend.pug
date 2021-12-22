@@ -1,0 +1,6 @@
+mixin slider-brend(data)
+	div.slider-brend(class!=attributes.class)
+		- for (var i = 0; i < data.items.length; i++)
+			div.slider-brend__item
+				div.slider-brend__body
+					img.slider-brend__img(src="images/"+data.items[i]['img'], alt=data.items[i]['imgAlt'])

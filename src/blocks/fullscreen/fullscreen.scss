@@ -1,0 +1,34 @@
+.fullscreen {
+	/* 2 Block model */
+	display: flex;
+	min-height: 100vh;
+	padding: 20px 0;
+
+	/* 4 Visual */
+	background-color: #666;
+}
+.fullscreen__bg {
+	/* 4 Visual */
+	background-image: url(../images/lazy-loading__img-01.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.fullscreen__body {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1 1 auto;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+	background-color: rgb(170, 109, 109);
+}

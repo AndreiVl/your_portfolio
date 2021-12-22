@@ -1,0 +1,46 @@
+.bad-link {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	padding-left: 70px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: normal;
+	color: $color-link-secondary;
+	text-decoration: none;
+
+	/* 4 Visual */
+	outline: none;
+}
+.bad-link::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	/* 2 Block model */
+	display: block;
+	width: 50px;
+	height: 2px;
+
+	/* 4 Visual */
+	content: "";
+	background-color: $color-bg-4;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.bad-link:hover::before,
+.bad-link:active::before,
+.bad-link:focus::before {
+	/* 1 Positioning */
+	left: 5px;
+
+	/* 4 Visual */
+	background-color: $color-bg-2;
+}

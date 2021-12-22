@@ -1,0 +1,5 @@
+mixin progress-bar(data)
+	div.progress-bar(class!=attributes.class)
+		div.progress-bar__band
+			span.progress-bar__number!=data.number
+

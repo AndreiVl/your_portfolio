@@ -1,0 +1,43 @@
+.brends {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-top: 40px;
+	padding-bottom: 80px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 75px;
+		padding-bottom: 150px;
+	}
+}
+.brends__shape {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.brends__shape--1 {
+	/* 1 Positioning */
+	top: auto;
+	left: auto;
+	right: -100px;
+	bottom: 0;
+
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		right: 0;
+	}
+}
+.brends__shape--2 {
+	/* 1 Positioning */
+	top: -150px;
+	left: -100px;
+
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		top: -100px;
+		left: -30px;
+	}
+}

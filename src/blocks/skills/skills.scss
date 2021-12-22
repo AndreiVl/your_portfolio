@@ -1,0 +1,27 @@
+.skills__list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.skills__item {
+	/* 2 Block model */
+	margin-bottom: 20px;
+
+	&:last-child {
+		/* 2 Block model */
+		margin: 0;
+	}
+}
+.skills__title {
+	/* 2 Block model */
+	margin-bottom: 10px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 14px;
+	line-height: 20px;
+	color: $color-text-white;
+}

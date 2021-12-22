@@ -1,0 +1,47 @@
+.item-services {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 2 Block model */
+	padding: 50px 30px 70px 30px;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+	background-color: $color-bg-3;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	cursor: pointer;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.item-services:hover {
+	/* 4 Visual */
+	transform: translateY(-20px);
+	background: $color-bg-5;
+}
+.item-services:hover .item-services__title {
+	/* 3 Typography */
+	color: $color-text-white;
+}
+.item-services__top {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.item-services__img {
+	/* 2 Block model */
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.item-services__title {
+	/* 2 Block model */
+	margin-bottom: 10px;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}

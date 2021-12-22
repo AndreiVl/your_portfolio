@@ -1,0 +1,13 @@
+.intro__title {
+	/* 2 Block model */
+	margin-bottom: 20px;
+}
+.intro__text {
+	/* 2 Block model */
+	margin-bottom: 16px;
+
+	&:last-child {
+		/* 2 Block model */
+		margin: 0;
+	}
+}

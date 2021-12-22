@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Главная')
+
+	body.custom-scrollbar
+		div.wrapper
+			include ../blocks/mixins.pug
+
+			+header({})
+
+			main.main.main--no-p
+				include ../blocks/presentation/presentation.pug
+
+				include ../blocks/about/about.pug
+
+				include ../blocks/services/services.pug
+
+				include ../blocks/works/works.pug
+
+				//- include ../blocks/brends/brends.pug
+
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug

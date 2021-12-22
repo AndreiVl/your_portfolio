@@ -1,0 +1,50 @@
+mixin menu(data)
+	nav.menu(class!=attributes.class)
+		ul.menu__list
+			- for (var i = 0; i < data.items.length; i++)
+				li.menu__item
+					a.menu__link(href=data.items[i]['linkUrl'] data-goto=data.items[i]['linkdata'])!=data.items[i]['linkText']
+
+//- +menu({
+//- 	items: [
+//- 		{linkUrl: '', linkdata: '', linkText: ''},
+//- 	]
+//- })
+//- li.menu__item
+//- 	a.menu__link(href="#" data-goto="") Первый уровень 1 
+//- 	span.menu__arrow.arrow
+//- 	ul.menu__sub-list
+//- 		li.menu__sub-item 
+//- 			a.menu__sub-link(href="#") Второй уровень
+//- 			span.menu__sub-arrow.arrow
+//- 			ul.menu__sub-sub-list
+//- 				li.menu__sub-sub-item
+//- 					a.menu__sub-sub-link(href="#") Третий уровень
+//- 				li.menu__sub-sub-item
+//- 					a.menu__sub-sub-link(href="#") Третий уровень
+//- 				li.menu__sub-sub-item
+//- 					a.menu__sub-sub-link(href="#") Третий уровень
+//- 		li.menu__sub-item 
+//- 			a.menu__sub-link(href="#") Второй уровень
+//- 		li.menu__sub-item 
+//- 			a.menu__sub-link(href="#") Второй уровень
+//- 		li.menu__sub-item 
+//- 			a.menu__sub-link(href="#") Второй уровень
+//- li.menu__item
+//- 	a.menu__link(href="#" data-goto="") Первый уровень 2
+//- li.menu__item
+	a.menu__link(href="#" data-goto="") Первый уровень 3
+	span.menu__arrow.arrow
+	ul.menu__sub-list
+		li.menu__sub-item 
+			a.menu__sub-link(href="#") Второй уровень
+		li.menu__sub-item 
+			a.menu__sub-link(href="#") Второй уровень
+			span.menu__sub-arrow.arrow
+			ul.menu__sub-sub-list
+				li.menu__sub-sub-item
+					a.menu__sub-sub-link(href="#") Третий уровень
+				li.menu__sub-sub-item
+					a.menu__sub-sub-link(href="#") Третий уровень
+				li.menu__sub-sub-item
+					a.menu__sub-sub-link(href="#") Третий уровень

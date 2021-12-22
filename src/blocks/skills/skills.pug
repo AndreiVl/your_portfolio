@@ -1,0 +1,7 @@
+mixin skills(data)
+	div.skills(class!=attributes.class)
+		ul.skills__list
+			- for (var i = 0; i < data.items.length; i++)
+				li.skills__item
+					p.skills__title!=data.items[i]['title']
+					+#{data.items[i].name}(data.items[i].arg)(class=data.items[i]['class'])

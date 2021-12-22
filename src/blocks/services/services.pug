@@ -1,0 +1,31 @@
+section.services
+	div.container
+		div.row
+			div.col-12.services__top
+				h2.h2.h2--left.services__title Мои Услуги
+
+				div.services__shape
+					img.services__shape-img(src="images/presentation__img-figure-01.svg" alt="figures")
+
+				//- div.services__link
+				//- 	+bad-link({url: '#', text: 'Посмотреть все'})
+
+		div.row.justify-content-center.services__list
+			div.col-12.col-lg-6.col-xl-4.services__list-item
+				+item-services({
+					img: 'services-img-html.svg', imgAlt: 'html',
+					title: 'Сайты',
+					desc: 'Все сверстанные сайта полностью кроссбраузерны, валидны и адаптивные под мобильные устройства.'
+				})
+			div.col-12.col-lg-6.col-xl-4.services__list-item
+				+item-services({
+					img: 'services-img-email.svg', imgAlt: 'email',
+					title: 'Email верстка',
+					desc: 'Все Email письма будут полностью адаптивны под мобильные устройства и максимально кроссбраузерны.'
+					})
+			div.col-12.col-lg-6.col-xl-4.services__list-item
+				+item-services({
+					img: 'services-img-react.svg', imgAlt: 'react',
+					title: 'React верстка',
+					desc: 'Подход под React верстку будет максимально модульным с использованием BEM.'
+					})

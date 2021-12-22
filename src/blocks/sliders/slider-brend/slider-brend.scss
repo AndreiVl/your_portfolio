@@ -1,0 +1,29 @@
+.slider-brend {
+	/* 2 Block model */
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.slider-brend__item {
+	/* 2 Block model */
+	padding: 0 15px;
+}
+.slider-brend__body {
+	/* 2 Block model */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 150px;
+
+	/* 4 Visual */
+	background: $color-bg-5;
+	border-radius: 10px;
+	cursor: pointer;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.slider-brend__body:hover {
+	/* 4 Visual */
+	background: $color-bg-3;
+}

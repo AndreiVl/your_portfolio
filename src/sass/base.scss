@@ -1,0 +1,101 @@
+body {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	overflow-x: hidden;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: $color-white;
+
+	/* 4 Visual */
+	background-color: $color-primary;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* 2 Block model */
+	margin: 0;
+}
+p,
+ul {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+}
+body.lock {
+	/* 2 Block model */
+	overflow: hidden;
+}
+.main {
+	/* 1 Positioning */
+	padding-top: 70px;
+}
+.main--no-p {
+	/* 2 Block model */
+	padding-top: 0;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	/* 1 Positioning */
+	position: absolute;
+
+	/* 2 Block model */
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+
+	/* 3 Typography */
+	white-space: nowrap;
+
+	/* 4 Visual */
+	clip: rect(0 0 0 0);
+	border: 0;
+	clip-path: inset(100%);
+}
+.wrapper {
+	/* 2 Block model */
+	width: 100%;
+	overflow-x: hidden;
+}
+.scrolled {
+	/* 2 Block model */
+	padding-top: 85px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 84px;
+	}
+}
+.overflow-heidden {
+	/* 2 Block model */
+	overflow: hidden;
+}
+.custom-scrollbar {
+	/* 4 Visual */
+	scrollbar-width: 5px;
+	scrollbar-color: $color-bg $color-bg-5;
+}
+.custom-scrollbar::-webkit-scrollbar {
+	/* 2 Block model */
+	width: 5px;
+	height: 80%;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+	/* 4 Visual */
+	background: $color-bg-5;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	/* 4 Visual */
+	background: $color-bg;
+	border: 1px solid $color-bg;
+}

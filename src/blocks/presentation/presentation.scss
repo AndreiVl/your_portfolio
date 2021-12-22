@@ -1,0 +1,133 @@
+.presentation {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-top: 70px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.presentation__shape {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.presentation__shape--1 {
+	/* 1 Positioning */
+	top: -50px;
+	left: -100px;
+	z-index: 60;
+
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.presentation__shape--1 .presentation__img {
+	/* 2 Block model */
+	display: block;
+	width: 150px;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 175px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 150px;
+	}
+	@media (min-width: 1400px) {
+		/* 2 Block model */
+		width: 100%;
+	}
+}
+.presentation__shape--2 {
+	/* 1 Positioning */
+	top: 20%;
+	left: auto;
+	right: 50%;
+
+	/* 4 Visual */
+	transform: translateX(50%);
+}
+.presentation__shape--3 {
+	/* 1 Positioning */
+	top: auto;
+	left: -15px;
+	bottom: 0;
+	z-index: 10;
+
+	@media (min-width: 576px) {
+		/* 1 Positioning */
+		left: -10%;
+	}
+}
+.presentation__shape--4 {
+	/* 1 Positioning */
+	top: 130px;
+	left: auto;
+	right: 0;
+	z-index: -1;
+}
+.presentation__content {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 15;
+
+	/* 2 Block model */
+	padding-top: 75px;
+	padding-bottom: 230px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 150px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-right: 30px;
+	}
+}
+.presentation__title {
+	/* 1 Positioning */
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+.presentation__action {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 70;
+
+	/* 2 Block model */
+	padding-top: 50px;
+}
+.presentation__developer {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 15;
+
+	/* 2 Block model */
+	padding-top: 200px;
+
+	/* 4 Visual */
+	background-color: rgba($color: $color-primary, $alpha: 0.5);
+}
+.presentation__developer .presentation__developer-img {
+	/* 2 Block model */
+	width: 600px;
+
+	/* 4 Visual */
+	transform: translateX(-10%);
+
+	@media (min-width: 1400px) {
+		/* 2 Block model */
+		width: 500px;
+	}
+	@media (min-width: 1600px) {
+		/* 2 Block model */
+		width: 600px;
+	}
+}

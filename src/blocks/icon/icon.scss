@@ -1,0 +1,15 @@
+.icon {
+	/* 2 Block model */
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	fill: $color-icon;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.icon--30 {
+	/* 2 Block model */
+	width: 30px;
+	height: 30px;
+}

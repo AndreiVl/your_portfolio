@@ -1,0 +1,30 @@
+section.presentation
+	div.presentation__shape.presentation__shape--1
+		img.presentation__img(src="images/presentation__img-figure-01.svg" alt="figures")
+
+	div.container
+		div.row
+			div.col-12.col-xl-8
+				div.presentation__content
+					div.presentation__shape.presentation__shape--3
+						img.presentation__img(src="images/presentation__img-figure-03.svg" alt="figures")
+					div.presentation__shape.presentation__shape--4
+						img.presentation__img(src="images/presentation__img-figure-02.svg" alt="figures")
+					div.presentation__bad-desc
+						+bad-desc({text: 'Привет'})
+
+						h1.h1.presentation__title
+							span Я, Андрей
+							|Верстальщик
+						p.text.lead Верстка сайтов, писем, верстка на&nbsp;React.
+
+						div.presentation__action
+							//- +btn({type: 'link', url: '#', text: 'Портфолио'})
+							a.btn.link-anchor(href='#works')
+								span.btn__text Портфолио
+
+			div.d-none.d-xl-block.col-xl-4
+				div.presentation__developer
+					div.presentation__shape.presentation__shape--2
+						img.presentation__img(src="images/img-dots.svg" alt="figures")
+					img.img.presentation__developer-img(src="images/presentation__img-developer.svg" alt="Developer")

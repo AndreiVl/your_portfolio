@@ -1,0 +1,36 @@
+.h1 {
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 34px;
+	line-height: 44px;
+	font-weight: bold;
+	color: $color-h1;
+
+	@media (min-width: 768px) {
+		/* 3 Typography */
+		font-size: 36px;
+		line-height: 47px;
+	}
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 50px;
+		line-height: 62px;
+	}
+	@media (min-width: 1400px) {
+		/* 3 Typography */
+		font-size: 70px;
+		line-height: 80px;
+	}
+	@media (min-width: 1600px) {
+		/* 3 Typography */
+		font-size: 82px;
+		line-height: 90px;
+	}
+}
+.h1 span {
+	/* 2 Block model */
+	display: block;
+
+	/* 3 Typography */
+	font-weight: 300;
+}

@@ -1,0 +1,51 @@
+.to-top {
+	/* 1 Positioning */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 999;
+
+	/* 2 Block model */
+	display: none;
+	width: 40px;
+	height: 40px;
+
+	/* 4 Visual */
+	background-color: #267;
+	-webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.25);
+
+	/* 5 Animation*/
+	transition: all 0.4s;
+}
+.to-top::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 58%;
+	left: 50%;
+
+	/* 2 Block model */
+	display: inline-block;
+	padding: 3px;
+	width: 10px;
+	height: 10px;
+
+	/* 4 Visual */
+	content: "";
+	transform: translate(-50%, -50%) rotate(-135deg);
+	border: solid #ffffff;
+	border-width: 0 3px 3px 0;
+
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.to-top:hover {
+	/* 4 Visual */
+	cursor: pointer;
+}
+.to-top:hover::before {
+	/* 4 Visual */
+	border: solid #ccc;
+	border-width: 0 3px 3px 0;
+}

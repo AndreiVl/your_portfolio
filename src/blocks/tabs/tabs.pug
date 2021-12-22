@@ -1,0 +1,15 @@
+mixin tabs(data)
+	div.tabs(class!=attributes.class)
+		ul.tabs__list
+			- for (var i = 0; i < data.items.length; i++)
+				if i == 0
+					li.tabs__item.tabs__item--active
+						span.tabs__text!=data.items[i]['tab']
+				else
+					li.tabs__item
+						span.tabs__text!=data.items[i]['tab']
+
+		div.tabs__body
+			- for (var j = 0; j < data.contents.length; j++)
+				div.tabs__content
+					+#{data.contents[j].name}(data.contents[j].arg)(class=data.contents[j]['class'])

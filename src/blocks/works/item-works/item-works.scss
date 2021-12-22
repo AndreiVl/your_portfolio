@@ -1,0 +1,155 @@
+.item-works {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+	overflow: hidden;
+
+	/* 4 Visual */
+	cursor: pointer;
+	background-color: $color-bg-3;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+.item-works::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: -100%;
+
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	/* 4 Visual */
+	content: "";
+	background-color: $color-bg-3;
+	opacity: 0.9;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.item-works:hover::before {
+	/* 1 Positioning */
+	left: 0;
+	z-index: 10;
+}
+
+// .item-works__img {
+// 	/* 4 Visual */
+// 	border-radius: 10px;
+// }
+.item-works:hover .item-works__desc {
+	/* 1 Positioning */
+	left: 20px;
+	z-index: 15;
+
+	/* 4 Visual */
+	visibility: visible;
+	opacity: 1;
+}
+.item-works:hover .item-works__link {
+	/* 1 Positioning */
+	right: 20px;
+
+	/* 4 Visual */
+	visibility: visible;
+	opacity: 1;
+}
+.item-works__link {
+	/* 1 Positioning */
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index: 10;
+
+	/* 1 Positioning */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+
+	/* 4 Visual */
+	background-color: transparent;
+	border: 2px solid $color-border-2;
+	visibility: hidden;
+	opacity: 0;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.item-works__link:hover,
+.item-works__link:active,
+.item-works__link:focus {
+	/* 4 Visual */
+	background-color: $color-bg-2;
+}
+.item-works__link .icon {
+	/* 4 Visual */
+	fill: $color-icon-2;
+}
+.item-works__link:hover .icon,
+.item-works__link:active .icon,
+.item-works__link:focus .icon {
+	/* 4 Visual */
+	fill: $color-icon-hover;
+	transform: scale(1.5);
+}
+.item-works__link-body {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+
+	/* 3 Typography */
+	text-decoration: none;
+	color: currentColor;
+}
+.item-works__desc {
+	/* 1 Positioning */
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+
+	/* 4 Visual */
+	visibility: hidden;
+	opacity: 0;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+}
+.item-works__title {
+	/* 3 Typography */
+	color: $color-text-white;
+}
+.item-works__text {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-block;
+	padding-left: 40px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 14px;
+}
+.item-works__text::before {
+	/* 1 Positioning */
+	position: absolute;
+	left: 0;
+	top: 50%;
+
+	/* 2 Block model */
+	width: 30px;
+	height: 2px;
+
+	/* 4 Visual */
+	background: $color-bg-4;
+	transform: translateY(-50%);
+	content: "";
+}

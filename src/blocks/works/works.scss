@@ -1,0 +1,147 @@
+.works {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 10;
+
+	/* 2 Block model */
+	padding-top: 150px;
+
+	@media (min-width: 7682px) {
+		/* 2 Block model */
+		padding-top: 230px;
+	}
+}
+.works__shape {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.works__shape--1 {
+	/* 1 Positioning */
+	position: absolute;
+	top: -330px;
+	left: -80px;
+
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		top: -240px;
+		left: 0;
+	}
+}
+.works__shape-img {
+	/* 2 Block model */
+	display: block;
+	width: 205px;
+}
+.works__shape--2 {
+	/* 1 Positioning */
+	top: -180px;
+	left: 50px;
+
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.works__shape--2 .works__shape-img {
+	/* 2 Block model */
+	width: auto;
+}
+.works__top {
+	/* 1 Positioning */
+	position: relative;
+}
+.works__title {
+	/* 2 Block model */
+	margin-bottom: 30px;
+
+	/* 3 Typography */
+	text-align: right;
+}
+.works__list-header {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.works__list-actions {
+	/* 2 Block model */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.works__list-nav {
+	/* 2 Block model */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0;
+	margin-bottom: 20px;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.works__list-nav-item {
+	/* 2 Block model */
+	display: inline-flex;
+	align-items: center;
+	padding: 9px 20px 5px 20px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	color: $color-white;
+	font-size: 14px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	border-radius: 5px;
+	border: 2px dashed $color-tab-border;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+
+	&:last-child {
+		/* 2 Block model */
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}
+.works__list-nav-item:hover {
+	/* 3 Typography */
+	color: $color-text-secondary;
+}
+.works__list-nav-item--active {
+	/* 3 Typography */
+	color: $color-text-secondary;
+
+	/* 4 Visual */
+	background-color: $color-tab-bg;
+}
+.works__item {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.works__item-animated {
+	/* 5 Animation */
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeIn;
+}
+.works__portfolio-no {
+	/* 2 Block model */
+	display: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

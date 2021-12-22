@@ -1,0 +1,96 @@
+section.about
+	div.container
+		div.row
+			div.col-12
+				div.about__title
+					h2.h2 О себе
+		div.about__body.row
+			div.col-12.col-lg-5
+				div.about__avatar
+					img.img.about__avatar-img(src="images/about__img-avatar.svg" alt="Андрей" title="Андрей" width="300")
+
+			div.col-12.col-lg-7
+				div.about__desc
+					+tabs({
+						items: [
+							{tab: 'Вступление'},
+							{tab: 'Навыки'},
+							{tab: 'Опыт'},
+						],
+						contents: [
+							{
+								name: 'intro',
+								arg: {
+
+								}
+							},
+							{
+								name: 'skills',
+								arg: {
+									items: [
+										{
+											title: 'HTML, PUG',
+											name: 'progress-bar',
+											arg: {
+												number: '100%'
+											}
+										},
+										{
+											title: 'CSS3, SASS, BEM',
+											name: 'progress-bar',
+											arg: {
+												number: '100%'
+											}
+										},
+										{
+											title: 'GULP',
+											name: 'progress-bar',
+											arg: {
+												number: '100%'
+											}
+										},
+										{
+											title: 'JS, JQUERY',
+											name: 'progress-bar',
+											arg: {
+												number: '40%'
+											},
+											class: 'progress-bar--40'
+										},
+										{
+											title: 'BOOTSTRAP',
+											name: 'progress-bar',
+											arg: {
+												number: '60%'
+											},
+											class: 'progress-bar--60'
+										},
+										{
+											title: 'REACT, TSX, JSX',
+											name: 'progress-bar',
+											arg: {
+												number: '30%'
+											},
+											class: 'progress-bar--30'
+										},
+									]
+								}
+							},
+							{
+								name: 'experience',
+								arg: {
+									items: [
+										{
+											text: 'В первые годы работы верстал обычные одностраничные сайты. Больше полгода принимал участие в верстке писем для рассылки одной крупной компании. Так же был небольшой опыт работы по правкам уже с готовыми сайтами на WordPress, 1c&#8209;Bitrix. Делал посадку пару сайтов на эти cms. Внедрял систему Schema.org для московского сайта по предоставлению услуг в сфере обслуживания (няни, дом работницы, личные водители).'
+										},
+										{
+											text: 'С ростом опыта работы уже верстал многостраничные сайты и мини магазины. Так же совершенствовал верстку для E-mail рассылок.'
+										},
+										{
+											text: 'Последний год верстаю одностраничные приложение на React. Не забываю про обычные сайты и E-mail письма.'
+										}
+									]
+								}
+							}
+						]
+					})

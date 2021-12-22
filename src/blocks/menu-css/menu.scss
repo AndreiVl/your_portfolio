@@ -1,0 +1,255 @@
+.menu a {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.menu a.parent {
+	/* 2 Block model */
+	margin-right: 30px;
+}
+.menu li {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.arrow {
+	/* 1 Positioning */
+	position: absolute;
+	right: 0;
+	top: 8px;
+
+	/* 2 Block model */
+	display: none;
+	width: 0;
+	height: 0;
+
+	/* 4 Visual */
+	border-top: 10px solid #fff;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	/* 5 Animation */
+	transition: transform 0.3s ease 0s;
+}
+.arrow.active {
+	/* 4 Visual */
+	transform: rotate(-180deg);
+}
+.menu__sub-arrow {
+	/* 1 Positioning */
+	top: 13px;
+	right: 10px;
+
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		top: 8px;
+
+		/* 4 Visual */
+		border-bottom: 5px solid transparent;
+		border-left: 10px solid #000;
+		border-top: 5px solid transparent;
+		border-right: none;
+	}
+}
+.menu__list {
+	/* 2 Block model */
+	display: block;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		display: flex;
+	}
+}
+.menu__item {
+	/* 4 Visual */
+	border-top: 1px solid $color-border;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		border: none;
+	}
+}
+.menu__item:last-child {
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border;
+
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		border: none;
+	}
+}
+.menu__link {
+	/* 2 Block model */
+	display: block;
+	padding: 15px 20px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	color: $color-link;
+
+	/* 4 Visual */
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed ease;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding: 10px 20px;
+
+		/* 3 Typography */
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+	/* 4 Visual */
+	color: $color-secondary;
+
+	/* 4 Visual */
+	background-color: $color-blueblack;
+
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		background-color: transparent;
+	}
+}
+.menu__sub-list {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: none;
+	min-width: 300px;
+	margin-top: 20px;
+
+	/* 4 Visual */
+	background-color: brown;
+
+	/* 5 Animation */
+	transition: all 0.4s ease 0s;
+
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		position: absolute;
+
+		/* 2 Block model */
+		display: block;
+		margin-top: 0;
+
+		/* 4 Visual */
+		visibility: hidden;
+		pointer-events: none;
+		transform: translate(0, 10%);
+		opacity: 0;
+	}
+}
+.menu__sub-list.open {
+	/* 2 Block model */
+	display: block;
+}
+.menu__sub-link {
+	/* 2 Block model */
+	display: inline-flex;
+	padding: 5px 10px;
+
+	/* 3 Typography */
+	color: #fff;
+}
+.menu__sub-sub-list {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: none;
+	min-width: 300px;
+
+	/* 4 Visual */
+	background-color: cadetblue;
+
+	/* 5 Animation */
+	transition: all 0.4s ease 0s;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		position: absolute;
+		top: 0;
+		left: 100%;
+
+		/* 2 Block model */
+		display: block;
+		padding-left: 5px;
+
+		/* 4 Visual */
+		visibility: hidden;
+		pointer-events: none;
+		transform: translate(10%, 0);
+		opacity: 0;
+	}
+}
+.menu__sub-sub-list.open {
+	/* 2 Block model */
+	display: block;
+}
+.menu__sub-sub-link {
+	/* 2 Block model */
+	display: inline-flex;
+	padding: 5px 10px;
+
+	/* 3 Typography */
+	color: #fff;
+}
+body.pc .menu__item:hover .menu__sub-list {
+	/* 2 Block model */
+	display: block;
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		visibility: visible;
+		pointer-events: all;
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+body.pc .menu__sub-item:hover .menu__sub-sub-list {
+	/* 2 Block model */
+	display: block;
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		visibility: visible;
+		pointer-events: all;
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+body.touch .menu__link {
+	/* 2 Block model */
+	flex: 1 1 auto;
+}
+
+body.touch .menu__sub-list.open {
+	/* 4 Visual */
+	visibility: visible;
+	pointer-events: all;
+	transform: translate(0, 0);
+	opacity: 1;
+}
+body.touch .menu__sub-sub-list.open {
+	/* 4 Visual */
+	visibility: visible;
+	pointer-events: all;
+	transform: translate(0, 0);
+	opacity: 1;
+}
+body.touch .arrow {
+	/* 2 Block model */
+	display: block;
+}

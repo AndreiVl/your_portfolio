@@ -1,0 +1,9 @@
+mixin item-services(data)
+	div.item-services
+		div.item-services__top
+			img.item-services__img(src="images/"+data.img, alt=data.imgAlt)
+		h3.h3.item-services__title!=data.title
+		p.item-services__text.text!=data.desc
+
+
+
