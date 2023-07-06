@@ -1,96 +1,96 @@
 section.about
-	div.container
-		div.row
-			div.col-12
-				div.about__title
-					h2.h2 О себе
-		div.about__body.row
-			div.col-12.col-lg-5
-				div.about__avatar
-					img.img.about__avatar-img(src="images/about__img-avatar.svg" alt="Андрей" title="Андрей" width="300")
+  div.container
+    div.row
+      div.col-12
+        div.about__title
+          h2.h2 О себе
+    div.about__body.row
+      div.col-12.col-lg-5
+        div.about__avatar
+          img.img.about__avatar-img(src="images/avatar.jpeg" alt="Андрей" title="Андрей" width="300")
 
-			div.col-12.col-lg-7
-				div.about__desc
-					+tabs({
-						items: [
-							{tab: 'Вступление'},
-							{tab: 'Навыки'},
-							{tab: 'Опыт'},
-						],
-						contents: [
-							{
-								name: 'intro',
-								arg: {
+      div.col-12.col-lg-7
+        div.about__desc
+          +tabs({
+            items: [
+              {tab: 'Вступление'},
+              {tab: 'Навыки'},
+              {tab: 'Опыт'},
+            ],
+            contents: [
+              {
+                name: 'intro',
+                arg: {
 
-								}
-							},
-							{
-								name: 'skills',
-								arg: {
-									items: [
-										{
-											title: 'HTML, PUG',
-											name: 'progress-bar',
-											arg: {
-												number: '100%'
-											}
-										},
-										{
-											title: 'CSS3, SASS, BEM',
-											name: 'progress-bar',
-											arg: {
-												number: '100%'
-											}
-										},
-										{
-											title: 'GULP',
-											name: 'progress-bar',
-											arg: {
-												number: '100%'
-											}
-										},
-										{
-											title: 'JS, JQUERY',
-											name: 'progress-bar',
-											arg: {
-												number: '40%'
-											},
-											class: 'progress-bar--40'
-										},
-										{
-											title: 'BOOTSTRAP',
-											name: 'progress-bar',
-											arg: {
-												number: '60%'
-											},
-											class: 'progress-bar--60'
-										},
-										{
-											title: 'REACT, TSX, JSX',
-											name: 'progress-bar',
-											arg: {
-												number: '30%'
-											},
-											class: 'progress-bar--30'
-										},
-									]
-								}
-							},
-							{
-								name: 'experience',
-								arg: {
-									items: [
-										{
-											text: 'В первые годы работы верстал обычные одностраничные сайты. Больше полгода принимал участие в верстке писем для рассылки одной крупной компании. Так же был небольшой опыт работы по правкам уже с готовыми сайтами на WordPress, 1c&#8209;Bitrix. Делал посадку пару сайтов на эти cms. Внедрял систему Schema.org для московского сайта по предоставлению услуг в сфере обслуживания (няни, дом работницы, личные водители).'
-										},
-										{
-											text: 'С ростом опыта работы уже верстал многостраничные сайты и мини магазины. Так же совершенствовал верстку для E-mail рассылок.'
-										},
-										{
-											text: 'Последний год верстаю одностраничные приложение на React. Не забываю про обычные сайты и E-mail письма.'
-										}
-									]
-								}
-							}
-						]
-					})
+                }
+              },
+              {
+                name: 'skills',
+                arg: {
+                  items: [
+                    {
+                      title: 'HTML, PUG',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '100%'
+                      }
+                    },
+                    {
+                      title: 'CSS3, SASS, BEM',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '100%'
+                      }
+                    },
+                    {
+                      title: 'GULP',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '100%'
+                      }
+                    },
+                    {
+                      title: 'JS, JQUERY',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '40%'
+                      },
+                      class: 'progress-bar--40'
+                    },
+                    {
+                      title: 'BOOTSTRAP',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '60%'
+                      },
+                      class: 'progress-bar--60'
+                    },
+                    {
+                      title: 'REACT, TSX, JSX',
+                      name: 'progress-bar',
+                      arg: {
+                        number: '30%'
+                      },
+                      class: 'progress-bar--30'
+                    },
+                  ]
+                }
+              },
+              {
+                name: 'experience',
+                arg: {
+                  items: [
+                    {
+                      text: 'Первые годы работы занимался версткой обычных одностраничных сайтов. Более полугода активно участвовал в верстке писем для рассылки в крупной компании. Имеется опыт работы с правками на существующих сайтах на платформах WordPress и 1C-Bitrix. Выполнил посадку нескольких сайтов на указанные CMS. Внедрил систему Schema.org для московского сайта, предоставляющего услуги в сфере обслуживания (няни, домработницы, личные водители).'
+                    },
+                    {
+                      text: 'Постепенно перешел к разработке многостраничных сайтов и мини-магазинов. Улучшал верстку для электронных писем и рассылок.'
+                    },
+                    {
+                      text: 'В последние два года активно принимал участие в совместной разработки UI-Kit с дизайнером для проекта. Где обеспечиваю полное соответствие компонентов, разработанных в дизайне, компонентам, созданным на фронтенде. Гарантирую точное воплощение дизайнерских концепций и эффективное взаимодействие между дизайном и фронтендом. '
+                    }
+                  ]
+                }
+              }
+            ]
+          })
