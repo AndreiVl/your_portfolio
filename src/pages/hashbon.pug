@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+  include include/head.pug
+  +head('hashbon')
+
+  body.custom-scrollbar
+    div.wrapper
+      include ../blocks/mixins.pug
+
+      +header({})
+
+      main.main.main--no-p
+        div Контент
+
+      include ../blocks/footer/footer.pug
+
+    include include/script.pug

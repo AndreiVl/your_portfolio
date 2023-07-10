@@ -63,16 +63,16 @@ $color-border-3: $color-blue;
  *
  */
 $breakpoints: (
-	sm: 480px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
 );
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1200px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
 );
 
 /*
@@ -81,3 +81,7 @@ $container-max-widths: (
  */
 
 $animation-speed: 0.4s;
+
+/* Components */
+
+$header-height: 70px;
