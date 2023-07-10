@@ -1,0 +1,59 @@
+.link-icon {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  /* 3 Typography */
+  color: $color-link;
+  text-decoration: none;
+
+  /* 4 Visual */
+  outline: none;
+
+  /* 5 Animation */
+  transition: all $animation-speed ease;
+}
+.link-icon:hover,
+.link-icon:active,
+.link-icon:focus {
+  /* 3 Typography */
+  color: $color-link-secondary;
+}
+.link-icon:hover .link-icon__img,
+.link-icon:active .link-icon__img,
+.link-icon:focus .link-icon__img {
+  /* 4 Visual */
+  background-color: $color-bg-3;
+}
+.link-icon:hover .link-icon__img .icon,
+.link-icon:active .link-icon__img .icon,
+.link-icon:focus .link-icon__img .icon {
+  /* 4 Visual */
+  fill: $color-bg;
+}
+.link-icon__img {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+
+  /* 4 Visual */
+  background-color: $color-bg;
+  border: 2px dashed $color-border-3;
+
+  /* 5 Animation */
+  transition: all $animation-speed ease;
+}
+.link-icon__img .icon {
+  /* 2 Block model */
+  display: flex;
+
+  /* 4 Visual */
+  fill: $color-bg-5;
+
+  transition: all $animation-speed ease;
+}

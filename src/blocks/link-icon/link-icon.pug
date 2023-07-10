@@ -1,0 +1,7 @@
+mixin link-icon(data)
+  a.link-icon(href=data.href class!=attributes.class) 
+    div.link-icon__img
+      +#{data.content.name}(data.content.arg)
+
+    if data.text 
+      span!=data.text 
