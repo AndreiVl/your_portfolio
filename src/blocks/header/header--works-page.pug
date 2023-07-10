@@ -1,0 +1,8 @@
+mixin header--works-page(data)
+  header.header.header--works-page(class!=attributes.class)
+    div.header__container.container
+      div.header__menu
+        div.header__hamburger
+          include ../hamburger/hamburger.pug
+
+        div.header__menu-body body

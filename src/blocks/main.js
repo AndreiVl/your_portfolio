@@ -13,11 +13,17 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 	hamburger();
 	linkAnchor();
-	tabs('.about__desc', '.tabs__item', '.tabs__content', 'tabs__item--active')
+  if ($('.tabs').length) {
+    tabs('.about__desc', '.tabs__item', '.tabs__content', 'tabs__item--active')
+  }
 	toTop();
 	if ($('.menu').length) {
 		menu();
 	}
-	filter();
+  if ($('.works__list-nav').length) {
+    filter();
+  }
 	sliders();
 });
+
+
