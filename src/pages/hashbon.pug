@@ -10,7 +10,12 @@ html(lang="ru")
       +header--works-page({})
 
       main.main
-        div Контент
+        div.container
+          div.row 
+            div.col-12
+              +btn({type: "link", url: "/", text: "На главную"})
+          div.row 
+            div.col-12 content
 
       include ../blocks/footer/footer.pug
 
