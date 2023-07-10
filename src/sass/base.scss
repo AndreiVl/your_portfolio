@@ -37,6 +37,7 @@ body.lock {
 .main {
   /* 1 Positioning */
   padding-top: $header-height;
+  flex: 1 1 auto;
 }
 .main--no-p {
   /* 2 Block model */
