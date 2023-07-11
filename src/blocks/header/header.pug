@@ -1,18 +1,19 @@
 mixin header(data)
-	header.header(class!=attributes.class)
-		div.header__container.container
-			//- a.header__logo(href="#")
+  header.header(class!=attributes.class)
+    div.header__container.container
+      a.header__logo(href="/")
+        img.img(src="images/logo.jpg" alt="Андрей" title="Андрей")
 
-			div.header__menu
-				div.header__hamburger
-					include ../hamburger/hamburger.pug
+      div.header__menu
+        div.header__hamburger
+          include ../hamburger/hamburger.pug
 
-				div.header__menu-body
-					+menu({
-						items: [
-							{linkUrl: '#', linkdata: '.about', linkText: 'О&nbsp;себе'},
-							{linkUrl: '#', linkdata: '.services', linkText: 'Верстка'},
-							{linkUrl: '#', linkdata: '.works', linkText: 'Портфолио'},
-							{linkUrl: '#', linkdata: '.contact', linkText: 'Контакты'},
-						]
-					})
+        div.header__menu-body
+          +menu({
+            items: [
+              {linkUrl: '#', linkdata: '.about', linkText: 'О&nbsp;себе'},
+              {linkUrl: '#', linkdata: '.services', linkText: 'Верстка'},
+              {linkUrl: '#', linkdata: '.works', linkText: 'Портфолио'},
+              {linkUrl: '#', linkdata: '.contact', linkText: 'Контакты'},
+            ]
+          })

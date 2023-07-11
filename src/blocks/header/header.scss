@@ -25,12 +25,15 @@
 
   /* 2 Block model */
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   /* 4 Visual */
   border-radius: 50%;
-  background-color: white;
+
+  .img {
+    border-radius: 50%;
+  }
 }
 .header__hamburger {
   /* 2 Block model */
