@@ -1,0 +1,22 @@
+.page-contents__h1 {
+  &:not(:last-child) {
+    /* 2 Block model */
+    margin-bottom: 46px;
+  }
+}
+.page-contents__h2 {
+  /* 3 Typography */
+  text-align: center;
+
+  &:not(:last-child) {
+    /* 2 Block model */
+    margin-bottom: 30px;
+  }
+}
+.page-contents__text {
+  &:not(:last-child) {
+    /* 2 Block model */
+    margin-bottom: 16px;
+  }
+}
+@import "./page-contents-hasbon/page-contents-hasbon.scss";

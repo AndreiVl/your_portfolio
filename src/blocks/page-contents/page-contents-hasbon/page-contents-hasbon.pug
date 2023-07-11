@@ -1,0 +1,69 @@
+section.page-contents.page-contents-hasbon
+  div.container
+    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll 
+      div.col-12.col-xl-6
+        h1.h1.page-contents__h1 Hashbon title
+        p.text.page-contents__text Описание
+
+      div.col-12.col-md-8.col-xl-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+
+    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+      div.col-12
+        h2.h2.page-contents__h2 Описание 1
+
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+
+    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+      div.col-12
+        h2.h2.page-contents__h2 Описание 2
+
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6
+        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+
+    div.row.justify-content-center.space__mb-xll  
+      div.col-auto
+        +btn({type: "link", url: "/", text: "На главную"})
+
+    div.row.justify-content-md-center.space__gap-row-lg.space__mb-lg  
+      div.col-12
+        h2.h2.page-contents__h2 Еще работы
+
+    div.row.space__gap-row-md
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-matbea.jpg', imgAlt: 'MATBEA',
+          url: 'https://matbea.com/',
+          title: 'MATBEA', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-pass.jpg', imgAlt: 'Hashbon Pass',
+          url: 'https://pass.hashbon.com/',
+          title: 'Hashbon Pass', desc: 'React TSX JSX BEM SASS CSS Next.js',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-app-pass.jpg', imgAlt: 'Hashbon Pass App',
+          url: 'https://app.pass.hashbon.com/',
+          title: 'Hashbon Pass App', desc: 'React TSX JSX BEM SASS CSS',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-lk.jpg', imgAlt: 'Hashbon React Lk',
+          url: 'https://www.figma.com/file/JzqupDHZ83HCQLnsVFPonu/React?type=design&node-id=128%3A20&mode=design&t=IblhIh6ilzFGKm1s-1',
+          title: 'Hashbon React Lk', desc: 'Совместная разработки UI-Kit и компонентов с дизайнером для проекта',
+        })
