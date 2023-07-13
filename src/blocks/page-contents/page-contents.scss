@@ -19,3 +19,33 @@
     margin-bottom: 16px;
   }
 }
+.page-contents__block-text {
+  &:not(:last-child) {
+    /* 2 Block model */
+    margin-bottom: $space-lg;
+  }
+}
+.page-contents__block-text--center {
+  /* 3 Typography */
+  text-align: center;
+}
+.page-contents__badge-list {
+  /* 2 Block model */
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: $space-esm;
+
+  &:not(:last-child) {
+    margin-bottom: $space-md;
+  }
+}
+.page-contents__share-list {
+  /* 2 Block model */
+  display: inline-flex;
+  flex-direction: column;
+  gap: $space-esm;
+
+  &:not(:last-child) {
+    margin-bottom: $space-sm;
+  }
+}

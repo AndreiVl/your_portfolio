@@ -1,0 +1,12 @@
+.badge {
+  /* 2 Block model */
+  display: inline-flex;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 30px;
+
+  /* 4 Visual */
+  background-color: $color-bg;
+  border: 2px dashed $color-border-3;
+  border-radius: 10px;
+}

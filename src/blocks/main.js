@@ -5,6 +5,7 @@ import spoler from "./spoler/spoler";
 import sliders from "./sliders/sliders";
 import toTop from "./to-top/to-top"
 import linkAnchor from "./link-anchor/link-anchor";
+import viewImg from "./view-img/view-img";
 import menu from "./menu-css/menu";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -23,6 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if ($('.works__list-nav').length) {
     filter();
   }
+  viewImg.init();
 	sliders();
 });
 
