@@ -1,0 +1,13 @@
+.link {
+  /* 3 Typography */
+  color: $color-secondary;
+  text-decoration: none;
+
+  /* 5 Animation */
+  transition: all $animation-speed ease;
+
+  &:hover {
+    /* 4 Visual */
+    opacity: 0.7;
+  }
+}
