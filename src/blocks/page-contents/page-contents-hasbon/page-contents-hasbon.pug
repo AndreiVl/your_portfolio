@@ -2,37 +2,79 @@ section.page-contents.page-contents-hasbon
   div.container
     div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll 
       div.col-12.col-xl-6
-        h1.h1.page-contents__h1 Hashbon title
-        p.text.page-contents__text Описание
+        div.page-contents__block-text
+          h1.h1.page-contents__h1 Hashbon React
+          p.text.page-contents__text Работал над созданием новой версии сайта на новом стеке технологий. В разботке участвовала команда из 18 человек.
+          p.text.page-contents__text Основной моей задачей была разработка UI-системы и компонентов совместно с дизайнером для проекта. Проектировал компоненты на React, которые точно соответствуют компонентам дизайна в Figma. Кроме того, занимался анимацией для всего сайта и написанием небольшой логики. Сайт разрабатывался на NextJS.
+          p.text.page-contents__text Для обеспечения соответствия компонентов дизайна и компонентов фронтенда был разработан 
+            a.link(href="https://storybook.gefara.xyz/" target="_blank") Storybook
+            |. Он позволяет наглядно увидеть работу всех компонентов сайта, из которых он был создан.
+
+        div.page-contents__badge-list
+          div.badge React
+          div.badge NextJS
+          div.badge Figma
+          div.badge SASS
+          div.badge BEM
+          div.badge GIT
+          div.badge Storybook
+
+        div.page-contents__share-list
+          +link-icon({ href: "https://hashbon.com/", text: "Hashbon React",
+            content: {
+              name: "icon",
+              arg: {
+                name: "icon--share",
+                mod: "icon--30",
+              }
+            }
+          })(target="_blank")
+          +link-icon({ href: "https://storybook.gefara.xyz/", text: "Storybook Hashbon React",
+            content: {
+              name: "icon",
+              arg: {
+                name: "icon--share",
+                mod: "icon--30",
+              }
+            }
+          })(target="_blank")
+
 
       div.col-12.col-md-8.col-xl-6
         img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 1
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Разработка UI Figma
+          p.text.page-contents__text Велась совместная разработка компонентов с дизайнером, которые соответствуют всем требованиям верстки.
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-1-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-2-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-3-small.jpg" alt="UI Hashbon React")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 2
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Разработка Storybook
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon.jpg" alt="Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-4-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-5-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-6-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-7-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-8-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-9-small.jpg" alt="UI Hashbon React")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-ui-10-small.jpg" alt="UI Hashbon React")
 
     div.row.justify-content-center.space__mb-xll  
       div.col-auto
@@ -45,9 +87,9 @@ section.page-contents.page-contents-hasbon
     div.row.space__gap-row-md
       div.col-12.col-lg-6.col-xl-6.works__item.react.all
         +item-works({
-          img: 'preview-img-matbea.jpg', imgAlt: 'MATBEA',
-          url: 'https://matbea.com/',
-          title: 'MATBEA', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
+          img: 'preview-img-hasbon.jpg', imgAlt: 'Hashbon React',
+          url: 'https://hasbon.com/',
+          title: 'Hashbon React', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
         })
       div.col-12.col-lg-6.col-xl-6.works__item.react.all
         +item-works({
