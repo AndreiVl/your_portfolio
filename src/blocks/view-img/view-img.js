@@ -23,12 +23,12 @@ const viewImg = (() => {
 
   const openModal = (largeImagePath) => {
     modalImage.src = largeImagePath;
-    modalContainer.style.display = "flex";
+    modalContainer.classList.add("view-img--open");
     document.body.classList.add("overflow-heidden");
   };
 
   const closeModal = () => {
-    modalContainer.style.display = "none";
+    modalContainer.classList.remove("view-img--open");
     modalImage.removeAttribute("src");
     document.body.classList.remove("overflow-heidden");
   };
