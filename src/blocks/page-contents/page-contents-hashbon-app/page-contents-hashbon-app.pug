@@ -2,37 +2,60 @@ section.page-contents.page-contents-hashbon-app
   div.container
     div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll 
       div.col-12.col-xl-6
-        h1.h1.page-contents__h1 Hashbon Pass App App title
-        p.text.page-contents__text Описание
+        div.page-contents__block-text
+          h1.h1.page-contents__h1 Hashbon Pass App
+          p.text.page-contents__text Участвовал в разботке App приложения 
+            a.link(href="https://app.pass.hashbon.com/" target="_blank") Hashbon Pass.
+            br 
+            |Hashbon Pass — паспорт в виде NFT. Это децентрализованный протокол проверки личности в проектах, построенных на блокчейнах Ethereum, BNB Chain, Polygon и других..
+            br
+            |Так же в разработке проекта участвовала команда из 18 человек.
+          p.text.page-contents__text Основной моей задачей была разработка UI-системы и компонентов совместно с дизайнером для проекта. Проектировал компоненты на React, которые точно соответствуют компонентам дизайна в Figma. Кроме того, занимался анимацией для всего сайта и написанием небольшой логики.
+
+        div.page-contents__badge-list
+          div.badge React
+          div.badge Figma
+          div.badge SASS
+          div.badge BEM
+          div.badge GIT
+
+        div.page-contents__share-list
+          +link-icon({ href: "https://pass.hashbon.com/", text: "Hashbon Pass",
+            content: {
+              name: "icon",
+              arg: {
+                name: "icon--share",
+                mod: "icon--30",
+              }
+            }
+          })(target="_blank")
 
       div.col-12.col-md-8.col-xl-6
         img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 1
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Разработка UI Figma
+          p.text.page-contents__text Велась совместная разработка компонентов с дизайнером, которые соответствуют всем требованиям верстки.
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-1-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-2-small.jpg" alt="UI Hashbon Pass")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 2
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Страницы приложения
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-app-pass.jpg" alt="Hashbon Pass App")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-app-ui-01-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-app-ui-02-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-app-ui-03-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
 
     div.row.justify-content-center.space__mb-xll  
       div.col-auto

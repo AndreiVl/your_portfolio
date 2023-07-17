@@ -41,7 +41,7 @@
 }
 .page-contents__share-list {
   /* 2 Block model */
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: $space-esm;
 
