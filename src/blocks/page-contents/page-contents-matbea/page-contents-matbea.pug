@@ -44,7 +44,7 @@ section.page-contents.page-contents-matbea
       div.col-12.col-md-8.col-xl-6
         img.img(src="images/preview-img-matbea.jpg" alt="MATBEA")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
         div.page-contents__block-text.page-contents__block-text--center
           h2.h2.page-contents__h2 Разработка UI Figma
@@ -57,7 +57,7 @@ section.page-contents.page-contents-matbea
       div.col-10.col-md-6.col-xl-4
         img.img(src="images/img-matbea-ui-3.png" alt="UI MATBEA")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
         div.page-contents__block-text.page-contents__block-text--center
           h2.h2.page-contents__h2 Разработка Storybook
@@ -76,44 +76,40 @@ section.page-contents.page-contents-matbea
         img.img(src="images/img-matbea-ui-9.jpg" alt="UI MATBEA")
 
       div.col-10.col-md-6.col-xl-4
-        <img class="img small-image" src="images/img-matbea-ui-9.jpg" alt="Маленькая картинка">
+        <img class="img view-img-small" src="images/img-matbea-ui-9.jpg" alt="Маленькая картинка">
       div.col-10.col-md-6.col-xl-4
-        <img class="img small-image" src="images/img-matbea-ui-8.jpg" alt="Маленькая картинка">
-      div.col-10.col-md-6.col-xl-4
-        <img class="img small-image" src="images/img-test-01-small.jpg" alt="Маленькая картинка">
-      div.col-10.col-md-6.col-xl-4
-        <img class="img small-image" src="images/img-test-02-small.jpg" alt="Маленькая картинка">
+        <img class="img view-img-small" src="images/img-matbea-ui-8.jpg" alt="Маленькая картинка">
 
-  div.row.justify-content-center.space__mb-xll  
-    div.col-auto
-      +btn({type: "link", url: "/", text: "На главную"})
+    div.row.justify-content-center.space__mb-xll  
+      div.col-auto
+        +btn({type: "link", url: "/", text: "На главную"})
 
-  div.row.justify-content-md-center.space__gap-row-lg.space__mb-lg  
-    div.col-12
-      h2.h2.page-contents__h2 Еще работы
+    div.row.justify-content-md-center.space__gap-row-lg.space__mb-lg  
+      div.col-12
+        h2.h2.page-contents__h2 Еще работы
 
-  div.row.space__gap-row-md
-    div.col-12.col-lg-6.col-xl-6.works__item.react.all
-      +item-works({
-        img: 'preview-img-matbea.jpg', imgAlt: 'MATBEA',
-        url: 'https://matbea.com/',
-        title: 'MATBEA', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
-      })
-    div.col-12.col-lg-6.col-xl-6.works__item.react.all
-      +item-works({
-        img: 'preview-img-hasbon-pass.jpg', imgAlt: 'Hashbon Pass',
-        url: 'https://pass.hashbon.com/',
-        title: 'Hashbon Pass', desc: 'React TSX JSX BEM SASS CSS Next.js',
-      })
-    div.col-12.col-lg-6.col-xl-6.works__item.react.all
-      +item-works({
-        img: 'preview-img-hasbon-app-pass.jpg', imgAlt: 'Hashbon Pass App',
-        url: 'https://app.pass.hashbon.com/',
-        title: 'Hashbon Pass App', desc: 'React TSX JSX BEM SASS CSS',
-      })
-    div.col-12.col-lg-6.col-xl-6.works__item.react.all
-      +item-works({
-        img: 'preview-img-hasbon-lk.jpg', imgAlt: 'MATBEA Lk',
-        url: 'https://www.figma.com/file/JzqupDHZ83HCQLnsVFPonu/React?type=design&node-id=128%3A20&mode=design&t=IblhIh6ilzFGKm1s-1',
-        title: 'MATBEA Lk', desc: 'Совместная разработки UI-Kit и компонентов с дизайнером для проекта',
-      })
+    div.row.space__gap-row-md
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-matbea.jpg', imgAlt: 'MATBEA',
+          url: 'https://matbea.com/',
+          title: 'MATBEA', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-pass.jpg', imgAlt: 'Hashbon Pass',
+          url: 'https://pass.hashbon.com/',
+          title: 'Hashbon Pass', desc: 'React TSX JSX BEM SASS CSS Next.js',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-app-pass.jpg', imgAlt: 'Hashbon Pass App',
+          url: 'https://app.pass.hashbon.com/',
+          title: 'Hashbon Pass App', desc: 'React TSX JSX BEM SASS CSS',
+        })
+      div.col-12.col-lg-6.col-xl-6.works__item.react.all
+        +item-works({
+          img: 'preview-img-hasbon-lk.jpg', imgAlt: 'MATBEA Lk',
+          url: 'https://www.figma.com/file/JzqupDHZ83HCQLnsVFPonu/React?type=design&node-id=128%3A20&mode=design&t=IblhIh6ilzFGKm1s-1',
+          title: 'MATBEA Lk', desc: 'Совместная разработки UI-Kit и компонентов с дизайнером для проекта',
+        })
