@@ -1,14 +1,22 @@
 const viewImg = (() => {
   const modalContainer = document.createElement("div");
   modalContainer.id = "modalContainer";
+  modalContainer.classList = "view-img";
+
+  const modalContainerBody = document.createElement("div");
+  modalContainerBody.classList = "view-img__body";
+
   const modalImage = document.createElement("img");
   modalImage.id = "modalImage";
-  const closeBtn = document.createElement("span");
-  closeBtn.id = "modalCloseBtn";
-  closeBtn.innerHTML = "&times;";
 
-  modalContainer.appendChild(closeBtn);
-  modalContainer.appendChild(modalImage);
+  const closeBtn = document.createElement("button");
+  closeBtn.id = "modalCloseBtn";
+  closeBtn.classList = "view-img__button";
+  closeBtn.innerHTML = "&times;";
+  
+  modalContainer.appendChild(modalContainerBody);
+  modalContainerBody.appendChild(closeBtn);
+  modalContainerBody.appendChild(modalImage);
   document.body.appendChild(modalContainer);
 
   const smallImages = document.getElementsByClassName("small-image");
