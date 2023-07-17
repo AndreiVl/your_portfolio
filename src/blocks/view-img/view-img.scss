@@ -1,59 +1,77 @@
-// .modal {
-//   display: none;
-//   position: fixed;
-//   z-index: 9999;
-//   padding-top: 50px;
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: 100%;
-//   overflow: auto;
-//   background-color: rgba(0, 0, 0, 0.7);
-// }
-
-// .modal-content {
-//   display: block;
-//   margin: 0 auto;
-//   max-width: 100%;
-//   max-height: 100%;
-// }
-
-// .close {
-//   color: #fff;
-//   float: right;
-//   font-size: 28px;
-//   font-weight: bold;
-//   padding: 10px;
-//   cursor: pointer;
-// }
-
-// .close:hover {
-//   color: #ccc;
-// }
-#modalContainer {
-  display: none;
+.view-img {
+  /* 1 Positioning */
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
+
+  /* 2 Block model */
+  display: none;
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  /* 4 Visual */
   background-color: rgba(0, 0, 0, 0.7);
   overflow: auto;
 }
+.view-img__body {
+  /* 1 Positioning */
+  position: relative;
 
-#modalImage {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
+  /* 2 Block model */
+  width: 100%;
+  max-width: 1200px;
+
+  /* 4 Visual */
+  border: 3px dashed $color-border-2;
+  border-radius: 6px;
 }
-
-#modalCloseBtn {
-  color: #fff;
+.view-img__button {
+  /* 1 Positioning */
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -16px;
+  right: -16px;
+
+  /* 2 Block model */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+
+  /* 3 Typography */
+  font-family: $font-main;
   font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+
+  /* 4 Visual */
+  background-color: $color-bg;
+  border: 2px dashed $color-border-3;
+  outline: none;
+
+  /* 5 Animation */
+  transition: all $animation-speed ease;
   cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-secondary;
+    border-color: $color-border-2;
+    background-color: $color-bg-5;
+  }
+}
+.view-img__img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+
+  /* 4 Visual */
+  border-radius: 6px;
 }
