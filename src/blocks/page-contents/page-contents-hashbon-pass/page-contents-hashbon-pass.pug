@@ -2,37 +2,62 @@ section.page-contents.page-contents-hashbon-pass
   div.container
     div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll 
       div.col-12.col-xl-6
-        h1.h1.page-contents__h1 matbea title
-        p.text.page-contents__text Описание
+        div.page-contents__block-text
+          h1.h1.page-contents__h1 Hashbon Pass
+          p.text.page-contents__text Участвовал в разботке сайта 
+            a.link(href="https://pass.hashbon.com/" target="_blank") Hashbon Pass. 
+            |Который представляет собой NFT и децентрализованный протокол для многоразовой верификации личности для Ethereum, BNB Chain, Polygon и других EVM-совместимых блокчейнов. Это актуальное и инновационное решение проблемы KYC в DeFi как для индивидуального пользования (B2C), так и для сервисов B2B.
+            br
+            |В разработке участвовала команда из 18 человек.
+          p.text.page-contents__text Основной моей задачей была разработка UI-системы и компонентов совместно с дизайнером для проекта. Проектировал компоненты на React, которые точно соответствуют компонентам дизайна в Figma. Кроме того, занимался анимацией для всего сайта и написанием небольшой логики. Сайт разрабатывался на NextJS.
+
+        div.page-contents__badge-list
+          div.badge React
+          div.badge NextJS
+          div.badge Figma
+          div.badge SASS
+          div.badge BEM
+          div.badge GIT
+
+        div.page-contents__share-list
+          +link-icon({ href: "https://pass.hashbon.com/", text: "Hashbon Pass",
+            content: {
+              name: "icon",
+              arg: {
+                name: "icon--share",
+                mod: "icon--30",
+              }
+            }
+          })(target="_blank")
 
       div.col-12.col-md-8.col-xl-6
         img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 1
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Разработка UI Figma
+          p.text.page-contents__text Велась совместная разработка компонентов с дизайнером, которые соответствуют всем требованиям верстки.
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-1-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-2-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-3-small.jpg" alt="UI Hashbon Pass")
 
-    div.row.justify-content-md-center.space__gap-row-lg.space__mb-xll  
+    div.row.justify-content-center.space__gap-row-lg.space__mb-xll  
       div.col-12
-        h2.h2.page-contents__h2 Описание 2
+        div.page-contents__block-text.page-contents__block-text--center
+          h2.h2.page-contents__h2 Страницы сайта
 
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
-      div.col-10.col-md-6
-        img.img(src="images/preview-img-hasbon-pass.jpg" alt="Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-4-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-5-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
+        img.img.view-img-small(src="images/img-hasbon-pass-ui-6-small.jpg" alt="UI Hashbon Pass")
+      div.col-10.col-md-6.col-xl-4
 
     div.row.justify-content-center.space__mb-xll  
       div.col-auto
@@ -45,8 +70,8 @@ section.page-contents.page-contents-hashbon-pass
     div.row.space__gap-row-md
       div.col-12.col-lg-6.col-xl-6.works__item.react.all
         +item-works({
-          img: 'preview-img-hasbon-pass.jpg', imgAlt: 'Hashbon Pass',
-          url: 'https://matbea.com/',
+          img: 'preview-img-hasbon.jpg', imgAlt: 'Hashbon Pass',
+          url: 'https://hasbon-pass.com/',
           title: 'Hashbon Pass', desc: 'React Storybook TSX JSX BEM SASS CSS Next.js',
         })
       div.col-12.col-lg-6.col-xl-6.works__item.react.all
