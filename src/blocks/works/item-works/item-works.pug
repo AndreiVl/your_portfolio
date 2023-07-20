@@ -1,9 +1,14 @@
 mixin item-works(data)
-	a.item-works(href=data.url target="_blank" class!=attributes.class)
-		//- a.item-works__link(href=data.url target="_blank")
-		//- 	+icon('icon--target')
-		img.img.item-works__img(src="images/"+data.img, alt=data.imgAlt)
-		div.item-works__desc
-			h3.h3.item-works__title!=data.title
-			p.text.item-works__text!=data.desc
+  if data.target
+    a.item-works(href=data.url target=data.target class!=attributes.class)
+      img.img.item-works__img(src="images/"+data.img, alt=data.imgAlt)
+      div.item-works__desc
+        h3.h3.item-works__title!=data.title
+        p.text.item-works__text!=data.desc
+  else 
+    a.item-works(href=data.url class!=attributes.class)
+      img.img.item-works__img(src="images/"+data.img, alt=data.imgAlt)
+      div.item-works__desc
+        h3.h3.item-works__title!=data.title
+        p.text.item-works__text!=data.desc
 
