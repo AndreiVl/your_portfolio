@@ -1,7 +1,11 @@
+.page-contents {
+  /* 2 Block model */
+  margin-bottom: $space-lg;
+}
 .page-contents__h1 {
   &:not(:last-child) {
     /* 2 Block model */
-    margin-bottom: 46px;
+    margin-bottom: $space-lg;
   }
 }
 .page-contents__h2 {
