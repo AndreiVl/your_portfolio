@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  include include/head.pug
+  +head('Hashbon React Payment')
+
+  body.custom-scrollbar
+    div.wrapper
+      include ../blocks/mixins.pug
+
+      +header--works-page({})
+
+      main.main
+        include ../blocks/bredcraumbs/bredcraumbs.pug
+
+        include ../blocks/page-contents/page-contents-hashbon-pay/page-contents-hashbon-pay.pug
+
+      include ../blocks/footer/footer.pug
+
+    include include/script.pug
